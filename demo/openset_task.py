@@ -108,7 +108,7 @@ def task_openset(model,generic_vp1, generic_vp2, generic_vp3, generic_vp4,
         mask=(mask).astype(np.float)
         color=[0.,0.,1.0]
         color=[0.502, 0.0, 0.502]
-        demo = visual.draw_binary_mask(mask, text='', alpha=0.7, edge_color=color)
+        demo = visual.draw_binary_mask(mask, text='', alpha=0.3, edge_color=color)
     res = demo.get_image()
 
     torch.cuda.empty_cache()
